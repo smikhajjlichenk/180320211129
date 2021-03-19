@@ -1,0 +1,8 @@
+@media (max-width: 425px) {
+  .chat-feedback__icon {
+    display: block;
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}

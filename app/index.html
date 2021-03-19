@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="chat">
+        <div class="chat-container chat-bg">
+          <h1 class="visually-hidden">Chat</h1>
+          <div class="chat__manager chat-manager">
+            <div class="chat-manager__avatar">
+              <img
+                class="chat-manager__avatar-img"
+                src="images/avatar-img.jpg"
+                alt=""
+              />
+            </div>
+            <div class="chat-manager__text">
+              <h3 class="chat-manager__name text-big">Вероника Ростова</h3>
+              <span class="chat-manager__position"> Менеджер по продажам </span>
+              <blockquote class="chat-manager__quote">
+                <p class="chat-manager__quote-paragraph">
+                  Подберу для вас самые лучшие предложения. Мои услуги абсолютно
+                  бесплатны
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="chat__services chat-services">
+            <span class="chat-services__service">Услуг</span>
+            <div class="chat-services__inner">
+              <ul class="chat-services__items">
+                <li class="chat-services__item services-item">
+                  <span class="services-item-name"> Ручное бронирование </span>
+                  <span class="services-item-amount"> 11 </span>
+                </li>
+                <li class="chat-services__item services-item">
+                  <span class="services-item-name"> Пакетные туры </span>
+                  <span class="services-item-amount"> 3 </span>
+                </li>
+                <li class="chat-services__item services-item">
+                  <span class="services-item-name"> Отели </span>
+                  <span class="services-item-amount"> 1 </span>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-services__total">
+              <span class="chat-services__total-text text-big">Всего</span>
+              <span class="chat-services__total-num text-big">15</span>
+            </div>
+          </div>
+          <div class="chat__feedback chat-feedback">
+            <span class="chat-feedback__last text-big">Последние отзывы</span>
+            <a class="chat-feedback__link" href="/">Все отзывы</a>
+            <ul class="chat-feedback__icons">
+              <li class="chat-feedback__icon chat-feedback__icon-like">131</li>
+              <li class="chat-feedback__icon chat-feedback__icon-comment">
+                14
+              </li>
+            </ul>
+          </div>
+          <div id="messages" class="chat__messages chat-messages">
+            <article class="chat-messages__item">
+              <header class="chat-messages__header">
+                <h3 class="chat-messages__user-name">
+                  Самуил<time datetime="2011-10-13" class="chat-messages__date"
+                    >13 октября 2011</time
+                  >
+                </h3>
+              </header>
+              <p class="chat-messages__message">
+                Привет, Верунь! ниче себе ты крутая. фотка класс!!!!
+              </p>
+            </article>
+            <article class="chat-messages__item">
+              <header class="chat-messages__header">
+                <h3 class="chat-messages__user-name">
+                  Лилия Семёнова<time
+                    datetime="2011-10-14"
+                    class="chat-messages__date"
+                    >14 октября 2011</time
+                  >
+                </h3>
+              </header>
+              <p class="chat-messages__message">
+                Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц
+                жизненно стабилизирует кинетический момент, это и есть всемирно
+                известный центр огранки алмазов и торговли бриллиантами?
+              </p>
+            </article>
+            <article class="chat-messages__item">
+              <header class="chat-messages__header">
+                <h3 class="chat-messages__user-name">
+                  Лилия Семёнова<time
+                    datetime="2011-10-14"
+                    class="chat-messages__date"
+                    >14 октября 2011</time
+                  >
+                </h3>
+              </header>
+              <p class="chat-messages__message">
+                Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц
+                жизненно стабилизирует кинетический момент?
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="chat-container chat-form-bg">
+          <form class="chat__form">
+            <textarea
+              id="user-message"
+              required
+              class="chat__form-text"
+            ></textarea>
+            <button
+              id="btn-submit"
+              class="chat__form-btn text-big"
+              type="submit"
+            >
+              Написать консультанту
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
